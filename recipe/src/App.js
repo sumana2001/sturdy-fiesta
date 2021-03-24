@@ -5,8 +5,8 @@ import Recipe from "./recipe";
 require('dotenv').config();
 
 const App = () => {;
-  const APP_ID="0471fe74";
-  const APP_KEY="5dea6e3047ec997c23b4b5b3822e9927";
+  const APP_ID="${{secret.APP_KEY}}";
+  const APP_KEY="${{secret.APP_ID}}";
   const [recipes, setRecipes] = useState([]);
   const [search, setSearch] = useState("");
   const [query, setQuery] = useState("chicken");
